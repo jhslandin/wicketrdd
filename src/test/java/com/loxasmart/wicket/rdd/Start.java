@@ -28,8 +28,6 @@ import org.eclipse.jetty.server.SecureRequestCustomizer;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.server.ServerConnector;
 import org.eclipse.jetty.server.SslConnectionFactory;
-import org.eclipse.jetty.server.session.DefaultSessionCache;
-import org.eclipse.jetty.server.session.FileSessionDataStore;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.util.resource.Resource;
 import org.eclipse.jetty.util.ssl.SslContextFactory;
@@ -46,6 +44,7 @@ public class Start
 	 * Main function, starts the jetty server.
 	 *
 	 * @param args
+         * @throws java.lang.Exception
 	 */
 	public static void main(String[] args) throws Exception
 	{
@@ -129,7 +128,6 @@ public class Start
 		}
 		catch (Exception e)
 		{
-			e.printStackTrace();
 			System.exit(100);
 		}
 	}

@@ -1,0 +1,56 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+/* A00.fxml */
+#apMainHeader {
+	-fx-background-color: darksalmon;	
+}
+
+#apMainFooter {
+	-fx-background-color: darksalmon;		
+}
+
+#pMainBody {
+	-fx-background-color: aqua;		
+	/*-fx-background-image: url(../imagenes/unnamed.png);*/
+	/*-fx-background-image: url(../imagenes/small_duke_guitar2.png);*/
+	-fx-background-image: url(../imagenes/com.jhslandin.animado.java.gif);
+	/*-fx-background-image: url(../imagenes/com.jhslandin.icon.logo_java.jpg);*/
+	/*-fx-background-image: url(../imagenes/com.jhslandin.icon.saraguro.jpg);*/
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat;
+
+}
+
+/* E00.fxml */
+#bpE00 {
+	-fx-background-color: lightskyblue;
+	-fx-background-image: url(../imagenes/wood.jpg);
+	-fx-background-position: center;
+	-fx-background-repeat: no-repeat; 
+}
+
+#bpE01 {
+	-fx-background-color: red;	
+}
+
+#bpLogin {
+	-fx-background-color: yellow;	
+}
+#pane{
+    -fx-background-image: url("background_image.jpg");
+    -fx-background-repeat: stretch;   
+    -fx-background-size: 900 506;
+    -fx-background-position: center center;
+    -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0); 
+}
+
+
+/* E01: Drag and Drop */
+#vbSource {
+	-fx-background-color: yellow;	
+}
+
+#vbSource {
+	-fx-background-color: blue;	
+}
