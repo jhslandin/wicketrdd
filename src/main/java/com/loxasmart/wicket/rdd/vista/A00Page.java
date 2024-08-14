@@ -7,7 +7,7 @@ import org.apache.wicket.markup.html.form.Button;
 
 import org.apache.wicket.markup.html.WebPage;
 
-public class A00Page extends WebPage implements IE10Page {
+public class A00Page extends WebPage implements IA00Page {
 
     private static final long serialVersionUID = 1L;
 
@@ -30,21 +30,22 @@ public class A00Page extends WebPage implements IE10Page {
     public A00Page(final PageParameters parameters) {
         super(parameters);
 
-        btDragDrop = new Button("a");
-        btVideoComentado = new Button("a");
-        btRecursoWeb = new Button("");
-        btRecursoNumero = new Button("a");
-        btRecursoPaneles = new Button("a");
-        btPruebaSumativa = new Button("a");
-        btPalabra = new Button("a");
-        btRecursoSonido = new Button("a");
-        btPilasEngine = new Button("a");
-        btFichaPedagogica = new Button("a");
-        btProyecto = new Button("a");
-        btPlan = new Button("a");
-        btSound = new Button("a");
-        bt2D = new Button("a");
-        cbIdioma = new Button("a");
+        
+        btDragDrop = new Button(ID_DRAGDROP);
+        btVideoComentado = new Button(ID_VIDEOCOMENTADO);
+        btRecursoWeb = new Button(ID_RECURSOWEB);
+        btRecursoNumero = new Button(ID_RECURSONUMERO);
+        btRecursoPaneles = new Button(ID_RECURSOPANELES);
+        btPruebaSumativa = new Button(ID_PRUEBASUMATIVA);
+        btPalabra = new Button(ID_PALABRA);
+        btRecursoSonido = new Button(ID_RECURSOSONIDO);
+        btPilasEngine = new Button(ID_PILASENGINE);
+        btFichaPedagogica = new Button(ID_FICHAPEDAGOGICA);
+        btProyecto = new Button(ID_PROYECTO);
+        btPlan = new Button(ID_PLAN);
+        btSound = new Button(ID_SOUND);
+        bt2D = new Button(ID_2D);
+        cbIdioma = new Button(ID_IDIOMA);
 
         this.setHandlers();
         
