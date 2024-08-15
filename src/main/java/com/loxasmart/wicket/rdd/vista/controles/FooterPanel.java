@@ -15,7 +15,6 @@
  */
 package com.loxasmart.wicket.rdd.vista.controles;
 
-import com.loxasmart.wicket.rdd.vista.IA00Page;
 import org.apache.wicket.ajax.AjaxEventBehavior;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 

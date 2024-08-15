@@ -27,6 +27,9 @@ D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\modelo\sys
 D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\modelo\system\SysRoles.java
 D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\modelo\system\SysUsuario.java
 D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\A00Page.java
+D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\controles\FooterPanel.java
+D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\controles\HeaderPanel.java
+D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\controles\IA00Page.java
 D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\E10Page.java
 D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\E11Page.java
 D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\E12Page.java
@@ -38,6 +41,5 @@ D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\E17P
 D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\E18Page.java
 D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\E19Page.java
 D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\E20Page.java
-D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\IA00Page.java
 D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\vista\IE10Page.java
 D:\develop\loxasmart\wicketrdd\src\main\java\com\loxasmart\wicket\rdd\WicketApplication.java

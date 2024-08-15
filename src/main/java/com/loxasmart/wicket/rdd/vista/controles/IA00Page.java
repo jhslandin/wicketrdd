@@ -1,4 +1,4 @@
-package com.loxasmart.wicket.rdd.vista;
+package com.loxasmart.wicket.rdd.vista.controles;
 
 public interface IA00Page {
     
