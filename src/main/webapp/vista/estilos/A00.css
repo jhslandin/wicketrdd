@@ -1,3 +1,20 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+footer {
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+}
 
 .img-button {
     display: block;
