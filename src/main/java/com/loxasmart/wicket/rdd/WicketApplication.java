@@ -4,7 +4,8 @@ import org.apache.wicket.csp.CSPDirective;
 import org.apache.wicket.csp.CSPDirectiveSrcValue;
 import org.apache.wicket.markup.html.WebPage;
 import org.apache.wicket.protocol.http.WebApplication;
-import com.loxasmart.wicket.rdd.vista.A00Page;
+import com.loxasmart.wicket.rdd.vista.A01Page;
+import com.loxasmart.wicket.rdd.modelo.DataBase;
 
 /**
  * Application object for your web application. If you want to run this
@@ -20,7 +21,7 @@ public class WicketApplication extends WebApplication {
     @Override
     public Class<? extends WebPage> getHomePage() {
         //return HomePage.class;
-        return A00Page.class;
+        return A01Page.class;
     }
 
     /**
@@ -29,13 +30,15 @@ public class WicketApplication extends WebApplication {
     @Override
     public void init() {
         super.init();
-
+        /*
         // needed for the styling used by the quickstart
         getCspSettings().blocking()
                 .add(CSPDirective.STYLE_SRC, CSPDirectiveSrcValue.SELF)
                 .add(CSPDirective.STYLE_SRC, "https://fonts.googleapis.com/css")
                 .add(CSPDirective.FONT_SRC, "https://fonts.gstatic.com");
-
+        */        
         // add your configuration here
+        DataBase.open();
+        System.out.println("Database is: " + DataBase.isEnable());
     }
 }

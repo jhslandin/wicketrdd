@@ -1,0 +1,30 @@
+/*
+ * Copyright 2024 LoxaSmart.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package com.loxasmart.wicket.rdd.vista;
+
+/**
+ *
+ * @author pcdell
+ */
+public interface IA01Page {
+    public final static String ID_LABEL_USERNAME = "lbUsername";
+    public final static String ID_TEXT_USERNAME ="tfUsername";
+    public final static String ID_DATOS = "datos";
+    public final static String ID_LABEL_PASSWORD = "lbPassword";
+    public final static String ID_TEXT_PASSWORD = "tfPassword";
+    public final static String ID_LOGIN = "btLogin";
+    public final static String ID_FOTO = "imgFoto";
+}

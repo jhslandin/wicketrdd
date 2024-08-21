@@ -3,8 +3,6 @@
  */
 package com.loxasmart.wicket.rdd.modelo;
 
-import java.io.File;
-import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -16,6 +14,8 @@ import org.slf4j.LoggerFactory;
  *
  */
 public class DataBase implements IDataBase {
+    public static final String SQLITEDRIVER="org.sqlite.JDBC";
+    public static final String MYSQLDRIVER="com.mysql.jdbc.Driver";
 
     public static final String DATABASE = "rdd_jhsl.db3";
     final Logger logger = LoggerFactory.getLogger(DataBase.class);
@@ -24,33 +24,10 @@ public class DataBase implements IDataBase {
 
     public static void open() {
         try {
-            Class.forName("org.sqlite.JDBC");
-
-            if (conn == null) {
-
-                URL url = DataBase.class.getResource(DATABASE);
-//				App.print(url.toString() + " " + url.getProtocol());
-
-                try {
-                    if (url.getProtocol().equalsIgnoreCase("file")) {
-//						App.print("Fuera del jar");
-                        conn = DriverManager.getConnection("jdbc:sqlite:" + url);
-                    } else {
-//						App.print("Dentro del jar");
-                        String pathname = System.getProperty("user.dir");
-                        pathname += File.separator + "modelo";
-                        pathname += File.separator + DATABASE;
-
-                        conn = DriverManager.getConnection("jdbc:sqlite:file:/" + pathname);
-                    }
-                } catch (SQLException e) {
-                    e.printStackTrace();
-                    System.exit(-1);
-                }
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-            System.exit(-1);
+            Class.forName(MYSQLDRIVER);
+            conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/rdddb","rdduser","rddpwd");  
+        } catch (SQLException | ClassNotFoundException e) {
+            conn = null;
         }
     }
 

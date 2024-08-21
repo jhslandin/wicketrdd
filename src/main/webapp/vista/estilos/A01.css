@@ -1,0 +1,21 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    
+}
+
+.derecha {
+    text-align: right;
+}
+
+label {
+    
+}
+
+.foto {
+    background-image: url(../imagenes/com.jhslandin.persona.guest.png);
+}
