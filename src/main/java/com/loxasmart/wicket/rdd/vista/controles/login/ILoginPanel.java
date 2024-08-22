@@ -13,12 +13,18 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.loxasmart.wicket.rdd.vista;
+package com.loxasmart.wicket.rdd.vista.controles.login;
 
 /**
  *
  * @author pcdell
  */
-public interface IA01Page {
-    public final static String ID_LOGIN = "loginPanel";
+public interface ILoginPanel {
+    public final static String ID_LABEL_USERNAME = "lbUsername";
+    public final static String ID_TEXT_USERNAME ="tfUsername";
+    public final static String ID_DATOS = "datos";
+    public final static String ID_LABEL_PASSWORD = "lbPassword";
+    public final static String ID_TEXT_PASSWORD = "tfPassword";
+    public final static String ID_LOGIN = "btLogin";
+    public final static String ID_FOTO = "imgFoto";
 }

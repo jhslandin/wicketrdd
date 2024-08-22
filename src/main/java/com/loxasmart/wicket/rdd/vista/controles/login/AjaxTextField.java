@@ -13,12 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.loxasmart.wicket.rdd.vista;
+package com.loxasmart.wicket.rdd.vista.controles.login;
+
+import org.apache.wicket.ajax.AjaxEventBehavior;
+import org.apache.wicket.markup.html.form.TextField;
 
 /**
  *
  * @author pcdell
  */
-public interface IA01Page {
-    public final static String ID_LOGIN = "loginPanel";
+public abstract class AjaxTextField extends AjaxEventBehavior {
+    AjaxTextField(TextField tf, String event) {
+        super(event);
+    }
 }
