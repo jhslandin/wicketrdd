@@ -119,6 +119,24 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>8.0.30</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.datanucleus/datanucleus-core -->
+        <dependency>
+            <groupId>org.datanucleus</groupId>
+            <artifactId>datanucleus-core</artifactId>
+            <version>6.0.7</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.datanucleus/datanucleus-api-jpa -->
+        <dependency>
+            <groupId>org.datanucleus</groupId>
+            <artifactId>datanucleus-api-jpa</artifactId>
+            <version>6.0.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.datanucleus/datanucleus-api-jdo -->
+        <dependency>
+            <groupId>org.datanucleus</groupId>
+            <artifactId>datanucleus-api-jdo</artifactId>
+            <version>6.0.2</version>
+        </dependency>
 
         <!-- uncomment if WebSocket support is needed
         <dependency>
