@@ -30,13 +30,15 @@ public class WicketApplication extends WebApplication {
     @Override
     public void init() {
         super.init();
-        /*
-        // needed for the styling used by the quickstart
+        
+        getDebugSettings().setDevelopmentUtilitiesEnabled(true);
+        
+// needed for the styling used by the quickstart
         getCspSettings().blocking()
-                .add(CSPDirective.STYLE_SRC, CSPDirectiveSrcValue.SELF)
-                .add(CSPDirective.STYLE_SRC, "https://fonts.googleapis.com/css")
-                .add(CSPDirective.FONT_SRC, "https://fonts.gstatic.com");
-        */        
+            .add(CSPDirective.STYLE_SRC, CSPDirectiveSrcValue.SELF)
+            .add(CSPDirective.STYLE_SRC, "https://fonts.googleapis.com/css")
+            .add(CSPDirective.FONT_SRC, "https://fonts.gstatic.com");
+                
         // add your configuration here
         DataBase.open();
         System.out.println("Database is: " + DataBase.isEnable());

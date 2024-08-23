@@ -17,5 +17,6 @@ label {
 }
 
 .foto {
-    background-image: url(com.jhslandin.persona.guest.png);
+    width: 128px;
+    height: 128px;
 }
