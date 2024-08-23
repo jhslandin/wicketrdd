@@ -23,7 +23,8 @@ import org.apache.wicket.markup.html.form.TextField;
  * @author pcdell
  */
 public abstract class AjaxTextField extends AjaxEventBehavior {
-    AjaxTextField(TextField tf, String event) {
+    
+    public AjaxTextField(TextField tf, String event) {
         super(event);
     }
 }

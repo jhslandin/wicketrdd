@@ -20,6 +20,7 @@ package com.loxasmart.wicket.rdd.vista.controles.login;
  * @author pcdell
  */
 public interface ILoginPanel {
+    public final static String ID_FORM = "form";
     public final static String ID_LABEL_USERNAME = "lbUsername";
     public final static String ID_TEXT_USERNAME ="tfUsername";
     public final static String ID_DATOS = "datos";
